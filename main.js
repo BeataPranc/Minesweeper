@@ -168,6 +168,7 @@ function divLeftClick(e){
       changeFace.src = '/images/sadface.jpg';
       stopTheTimer();
       revealBombs();
+      endGame();
     }else{
       newDiv.classList.remove('bomb');
       let newItem = document.createElement('img'); 
@@ -176,6 +177,7 @@ function divLeftClick(e){
       changeFace.src = '/images/sadface.jpg';
       stopTheTimer();
       revealBombs();
+      endGame();
     }
     
    
@@ -420,6 +422,7 @@ function checkingBombsOpen(e){
             document.getElementById(element.id).appendChild(newItem);
             changeFace.src = '/images/sadface.jpg';
             stopTheTimer()
+            //endGame();
             revealBombs();
           }
           if(element.classList.contains('empty')){
@@ -659,16 +662,23 @@ function stopTheTimer(){
   intervalId = null;
   countingTimer.innerHTML = '000';
 
-  console.log(boardArray);
+  //console.log(boardArray);
+  /*boardArray.forEach(e=>{
+    let divElement = document.getElementById(e);
+    divElement.onmousedown = null;
+    divElement.onmouseup = null;
+    divElement.oncontextmenu = null;  
+  });*/
+}
+
+function endGame(){
   boardArray.forEach(e=>{
     let divElement = document.getElementById(e);
     divElement.onmousedown = null;
     divElement.onmouseup = null;
     divElement.oncontextmenu = null;  
-  });
+  })
 }
-
-
 
 
 
