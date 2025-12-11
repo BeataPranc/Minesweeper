@@ -1,0 +1,311 @@
+.small-container
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  background-color: rgb(158, 158, 158);
+  padding: 10px;
+  max-width: 200px;
+  max-height: 250px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+}
+
+.small-container > div,
+.medium-container> div,
+.large-container > div { 
+  width: 15px;
+  height: 15px;
+  border-style: groove ;
+  background-color: lightgray;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+    
+}
+
+.small-container > div >p,
+.medium-container> div > p,
+.large-container > div > p{ 
+  margin: 0px;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+
+.small-container > div > img,
+.medium-container >div >img,
+.large-container >div >img {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  margin-bottom: 4.8px;
+  object-fit: contain;
+  width: 15px;
+  height: 15px;
+  
+}
+
+.flag > div > img {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  margin-bottom: 4.8px;
+  object-fit: contain;
+  width: 15px;
+  height: 15px;
+}
+
+
+
+.medium-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  background-color: rgb(158, 158, 158);
+  padding: 10px;
+  max-width: 350px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.large-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  background-color: rgb(158, 158, 158);
+  padding: 10px;
+  max-width: 640px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bomb > img {
+  visibility: hidden;
+}
+
+
+
+.numb > p{
+  visibility: hidden;
+}
+
+.empty > p {
+  visibility: hidden;
+}
+
+.one {
+  color: blue;
+}
+
+.two{
+  color: green;
+}
+
+.three{
+  color: red;
+}
+
+.four{
+  color: darkblue;
+}
+
+.open-empty > p
+{
+  border-style: inset;
+  
+  width: 10.273px;
+  height: 10.273px;
+  margin: 0px;
+  background-color: rgb(199, 198, 198);
+}
+
+
+.empty-color > p {
+  background: aquamarine;
+}
+
+.wrong-flag > p {
+  visibility: hidden;
+}
+
+
+.select-level{
+  background-color: rgb(158, 158, 158);
+  padding: 10px;
+  max-width: 200px;
+  max-height: 80px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+}
+
+.select-level > label {
+  font-size: 12px;
+  
+}
+
+.select-level >input {
+ height: 12px;
+ width: 13px;
+ margin: 0px;
+}
+
+.select-level-medium {
+  background-color: rgb(158, 158, 158);
+  padding: 10px;
+  max-width: 350px;
+  max-height: 60px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.select-level-medium >label {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.select-level-medium > input {
+  height: 12px;
+  width: 13px;
+  margin: 0px;
+}
+
+.select-level-large {
+  background-color: rgb(158, 158, 158);
+  padding: 10px;
+  max-width: 640px;
+  max-height: 60px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.select-level-large >label {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.select-level-large > input {
+  height: 12px;
+  width: 13px;
+  margin: 0px;
+}
+
+
+
+
+
+
+.smily-face{
+  width: 35px;
+  height: 35px;
+  margin-left: 23.5px;
+  padding: 0px;
+  object-fit: contain;
+}
+
+.smily-face >img {
+  width: 30px;
+  height: 30px;
+  
+}
+
+.smily-face-medium{
+  width: 35px;
+  height: 35px;
+  margin-left: 93.5px;;
+  padding: 0px;
+  object-fit: contain;
+}
+
+.smily-face-medium >img {
+  width: 30px;
+  height: 30px;
+  
+}
+
+.smily-face-large{
+  width: 35px;
+  height: 35px;
+  margin-left: 243px;;
+  padding: 0px;
+  object-fit: contain;
+}
+
+.smily-face-large >img {
+  width: 30px;
+  height: 30px;
+  
+}
+
+
+
+
+.left-mines{
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  align-content: center;
+  color: rgb(246, 8, 8);
+  font-size: 30px;
+}
+
+.timer{
+  float: right;
+  align-content: center;
+  margin-top: 5px;
+  margin-right: 5px;
+  color: rgb(246, 8, 8);
+  font-size: 30px;
+  
+}
+
+.timer-mines-face-small{
+  display: block;
+  
+  padding-top: 5px;
+  padding-bottom: 3px;
+  background-color: rgb(243, 239, 239);
+  border-style: double;
+  max-width: 182px;
+  margin-left: 6px;
+  margin-top: 2px;
+}
+
+.timer-mines-face-medium{
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  background-color: rgb(243, 239, 239);
+  border-style: double;
+  max-width: 324px;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.timer-mines-face-large{
+  display: block;
+  
+  padding-top: 5px;
+  padding-bottom: 3px;
+  background-color: rgb(243, 239, 239);
+  border-style: double;
+  max-width: 610px;
+  margin-left: 13px;
+  margin-top: 2px;
+}
+
+
+

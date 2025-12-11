@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>MineSweeper</title>
+</head>
+<body id="load-page" onload="generateBoard(9, 9)">
+  <div class="select-level" id="select-level">
+    <label for="biginner">Beginner</label>
+    <input id="biginner" type="radio" name="difficulty-level" onclick="generateBoard(9,9)" checked >
+    <label for="intermediate">Intermediate</label>
+    <input id="intermediate" type="radio" name="difficulty-level"  onclick="generateBoard(16,16)">
+    <label for="expert">Expert</label>
+    <input id="expert" type="radio" name="difficulty-level" onclick="generateBoard(16,30)">
+    
+  <div id="timer-mines-face" class="timer-mines-face-small">
+    <p id="left-mines" class="left-mines">000</p>
+    <button id="faces"  class="smily-face" onclick="start()"><img  id="image-of-faces" src="/images/smilyface.jpg"></button>
+    <p id="timer" class="timer" >000</p>
+  </div> 
+
+  </div>
+  <div id="small-container" class="small-container">
+    
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
